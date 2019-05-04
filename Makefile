@@ -2,7 +2,7 @@ export GO111MODULE=on
 export GOFLAGS=-mod=vendor
 export CGO_ENABLED=0
 
-build: compile ineffassign
+build: compile
 
 compile: 
 	go build ./...
@@ -16,9 +16,6 @@ test: lint
 	CGO_ENABLED=1 go test -race -v -p 1 -timeout 60m -covermode=atomic -coverprofile coverage.out ./...
 	go tool cover -func=coverage.out | grep "total"
 	go tool cover -html=coverage.out -o coverage.html
-
-ineffassign:
-	ineffassign .
 
 fmt:
 	go fmt ./...
