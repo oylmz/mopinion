@@ -1,8 +1,6 @@
 package mopinion
 
-import (
-	"context"
-)
+import "context"
 
 // AccountInterface holds only one method for retrieving the account.
 type AccountInterface interface {

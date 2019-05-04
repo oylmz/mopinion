@@ -127,6 +127,7 @@ func TestDatasetUpdate(t *testing.T) {
 		t.Errorf("expected dataset: %+v but got: %+v", expectedDataset, dataset)
 	}
 }
+
 func TestDatasetDelete(t *testing.T) {
 	client, mux, _, teardown := setup()
 	defer teardown()

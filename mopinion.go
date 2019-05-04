@@ -303,7 +303,7 @@ func CheckResponse(r *http.Response) error {
 		return (*AuthenticationError)(errorResponse)
 	case ErrorCode(errorResponse.ErrorCode) == server:
 		return (*ServerError)(errorResponse)
-	//TODO: other errors should be added here
+	// TODO: other errors should be added here
 	default:
 		return errorResponse
 	}

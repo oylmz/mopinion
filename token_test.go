@@ -6,7 +6,6 @@ import (
 )
 
 func TestToken(t *testing.T) {
-
 	client, _, _, teardown := setup()
 	defer teardown()
 

@@ -47,7 +47,6 @@ func (d *Deployments) UnmarshalJSON(buf []byte) (err error) {
 		d.Deployments = append(d.Deployments, *deployment)
 	}
 	return nil
-
 }
 
 // Get returns Deployments
