@@ -1,0 +1,264 @@
+
+<!-- saved from url=(0067)https://developer.mopinion.com/api/error-codes/#invalid-credentials -->
+<html><script type="text/javascript" charset="utf-8" id="zm-extension" src="chrome-extension://fdcgdnkidjaadafnichfpabhfomcebme/scripts/webrtc-patch.js" async=""></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>API Error Codes | Mopinion Developers</title>
+    <meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+    <link rel="stylesheet" media="screen" href="./API Error Codes _ Mopinion Developers_files/kb-6e599db546d724f037b851b2536c2d24.css">
+    <link rel="stylesheet" media="screen" href="./API Error Codes _ Mopinion Developers_files/style.css">
+    <link rel="stylesheet" href="./API Error Codes _ Mopinion Developers_files/font-awesome.min.css">
+  </head>
+  <body class="page-knowledge_base/dashboard page-knowledge_base/dashboard-index ext-webkit ext-chrome ext-linux scrolled">
+
+      <div class="box-a-container">
+        <div class="all-panels">
+          <div class="box-a-header page-knowledge_base/dashboard page-knowledge_base/dashboard-index">
+            <div class="box-a-wrap">
+              <h1><a href="https://developer.mopinion.com/"><img alt="Errorrrr | Mopinion - Support" src="./API Error Codes _ Mopinion Developers_files/NrnpDR-zHL3yZckABssB"></a></h1>
+            </div>
+          </div>
+
+          <div class="box-a-main">
+            <div class="box-a-wrap">
+              <div class="box-b-main page-knowledge_base/dashboard page-knowledge_base/dashboard-index">
+                <div class="box-b-wrap center-panel">
+                  <div class="box-c-knowledge-base-dashboard">
+                    <div class="box-c-dashboard-header">
+                      <div class="box-c-dashboard-header-wrap">
+                        <h1>Computer says: 'no!'</h1>
+                      </div>
+                    </div>
+                    <div class="box-c-categories">
+
+                      <div class="category">
+                        <a name="1"></a>
+                        <a name="unknown-error"></a>
+                        <h2>1. Unknown / Generic error</h2>
+                        <p>
+                          Our servers are ok, the request was accepted and appears to be valid. <br>
+                          There might be some additional information about what happened in the response body.<br>
+                          If not, check your request carefully, and try again. If you keep getting this error, <a href="mailto:support@mopinion.com?subject=API:%20Unknown%20/%20Generic%20error"><i class="fa fa-envelope"></i> drop us a line</a>
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="2"></a>
+                        <a name="server-error"></a>
+                        <h2>2. Server error</h2>
+                        <p>
+                          It's not you,... it's us.<br>
+                          Unfortunately we can't give you any more information at this point. The good news is you can try your request again. Just not too soon. Go get a coffee first.
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="3"></a>
+                        <a name="public-key-not-found"></a>
+                        <h2>3. Public key not found</h2>
+                        <p>
+                          Looks like the <strong>public key</strong> you provided is incorrect. Better make sure you didn't make a typo.
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="4"></a>
+                        <a name="invalid-token"></a>
+                        <h2>4. Invalid Token</h2>
+                        <p>
+                          Looks like the token you provided in the <strong>x-auth-token</strong> header is incorrect.
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="5"></a>
+                        <a name="invalid-json"></a>
+                        <h2>5. Invalid JSON</h2>
+                        <p>
+                          The request body you send is not properly formatted JSON.<br>
+                          Go check for typo's, or check your data on <a href="https://jsonlint.com/" target="_blank"><i class="fa fa-external-link"></i> jsonlint.com</a>
+                        </p>
+                    </div>
+
+                    <div class="category">
+                      <a name="6"></a>
+                      <a name="route-not-found"></a>
+                      <h2>6. Route does not exist</h2>
+                      <p>
+                        The resource you are requesting is not available,.. or at least not at this endpoint.
+                      </p>
+                    </div>
+
+                    <div class="category">
+                      <a name="7"></a>
+                      <a name="report-id-not-set"></a>
+                      <h2>7. Report id is not set</h2>
+                      <p>
+                        You need to provide a <strong>report-id</strong>.<br>
+                        Use the <strong>/account</strong> endpoint to see valid id's
+                      </p>
+                    </div>
+
+                    <div class="category">
+                      <a name="8"></a>
+                      <a name="report-not-found"></a>
+                      <h2>8. Report not found</h2>
+                      <p>
+                        The report-id you provided does not point to a report in your account.<br>
+                        Use the <strong>/account</strong> endpoint to see valid report id's
+                      </p>
+                    </div>
+
+                    <div class="category">
+                      <a name="9"></a>
+                      <a name="resource-update-failed"></a>
+                      <h2>9. Failed to update the resource</h2>
+                      <p>
+                        Your requests appears to be ok, but something went wrong trying to process it.<br>
+                        You may try the request again.
+                      </p>
+                    </div>
+
+                    <div class="category">
+                      <a name="10"></a>
+                      <a name="insufficient-rights"></a>
+                      <h2>10. You don't have enough rights for this action</h2>
+                      <p>
+                        Your requests appears to be ok, but you're just not allowed to perform whatever it was you tried to do.
+                      </p>
+                    </div>
+
+                    <div class="category">
+                      <a name="11"></a>
+                      <a name="reports-limit-reached"></a>
+                      <h2>11. Maximum number of reports reached</h2>
+                      <p>
+                        You can check the maxium allowed number of reports through the <strong>/account</strong> endpoint,
+                        or by visiting the billing page in the Mopinion Suite.
+                      </p>
+                    </div>
+
+                    <div class="category">
+                        <a name="12"></a>
+                        <a name="invalid-request-body"></a>
+                        <h2>12. One or more required fields are missing or invalid</h2>
+                        <p>
+                          The request body is formatted correctly, but the the request can't be completed since the
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="13"></a>
+                        <a name="dataset-id-not-set"></a>
+                        <h2>13. Dataset id is not set</h2>
+                        <p>
+                          You need to provide a <strong>dataset-id</strong>.<br>
+                          Use the <strong>/account</strong> endpoint to see valid id's
+                        </p>
+                      </div>
+                      <div class="category">
+                        <a name="14"></a>
+                        <a name="dataset-not-found"></a>
+                        <h2>14. Dataset not found</h2>
+                        <p>
+                          The dataset-id you provided does not point to a dataset in your account.<br>
+                          Use the <strong>/account</strong> endpoint to see valid dataset id's
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="15"></a>
+                        <a name="dataset-limit-reached"></a>
+                        <h2>15. Maximum number of datasets reached</h2>
+                        <p>
+                          You can check the maxium allowed number of datasets through the <strong>/account</strong> endpoint,
+                          or by visiting the billing page in the Mopinion Suite.
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="16"></a>
+                        <a name="resource-creation-failed"></a>
+                        <h2>16. Failed to create the resource</h2>
+                        <p>
+                          Your requests appears to be ok, but something went wrong trying to save it.<br>
+                          You may try the request again.
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="17"></a>
+                        <a name="no-deployment-code-available"></a>
+                        <h2>17. There are no deployment codes for your account</h2>
+                        <p>
+                          We couldn't find any deployment codes associated with your account.<br>
+                          Login to the Mopinion Suite, to create one.
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="18"></a>
+                        <a name="invalid-credentials"></a>
+                        <h2>18. The credentials you provided are not valid</h2>
+                        <p>
+                          The resource you are trying to reach, need credentials in the form of an <strong>Authorization</strong> header. (Not an 'x-auth-token' header with a signature token)<br>
+                          You can create one using your <strong>public key</strong> and <strong>private key</strong> following the <a href="https://tools.ietf.org/html/rfc1945#section-11.1" target="_blank"><i class="fa fa-external-link"></i> RFC1945 -11.1 Basic Authentication Scheme</a>.
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="19"></a>
+                        <a name="pagenumber-out-of-bounds"></a>
+                        <h2>19. There are no results for the page number you requested</h2>
+                        <p>
+                          The resource-collection does exist, but the page number you provided exceeds the number of pages available.
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="20"></a>
+                        <a name="deployment-id-not-set"></a>
+                        <h2>20. Deployment id is not set</h2>
+                        <p>
+                          You need to provide a <strong>deployment-id</strong>.
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="21"></a>
+                        <a name="deployment-not-found"></a>
+                        <h2>21. Deployment not found</h2>
+                        <p>
+                          We can find a deployment for the <strong>deployment-id</strong> you provided.
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="22"></a>
+                        <a name="organisation-not-found"></a>
+                        <h2>22. Organisation not found</h2>
+                        <p>
+                          There is no organisation with the id you provided.
+                        </p>
+                      </div>
+
+                      <div class="category">
+                        <a name="23"></a>
+                        <a name="account-not-found"></a>
+                        <h2>23. Account not found</h2>
+                        <p>
+                          The credentials / signature are valid, but it looks like there's no data associated with them.<br>
+                          This is very unusual... <a href="mailto:support@mopinion.com?subject=API:%20Where%20did%20my%20account%20go?"><i class="fa fa-envelope"></i> Better contact us</a>
+                        </p>
+                      </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+</body></html>

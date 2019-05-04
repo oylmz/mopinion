@@ -1,2 +1,3 @@
 # mopinion
-Go library for accessing the Mopinion API 
+
+A go-client for mopinion
