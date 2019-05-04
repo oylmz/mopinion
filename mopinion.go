@@ -73,14 +73,13 @@ type Client struct {
 	UserAgent string
 
 	// Services used for talking to different parts of the Mopinion API.
-	Token   TokenInterface
-	Account AccountInterface
-	//TODO: Deployment service
-	//Deployments *DeploymentsService
-	Datasets DatasetsInterface
-	Fields   FieldsInterface
-	Feedback FeedbackInterface
-	Reports  ReportsInterface
+	Token       TokenInterface
+	Account     AccountInterface
+	Deployments DeploymentsInterface
+	Datasets    DatasetsInterface
+	Fields      FieldsInterface
+	Feedback    FeedbackInterface
+	Reports     ReportsInterface
 }
 
 type service struct {
@@ -132,8 +131,7 @@ func NewClient(httpClient *http.Client, credentialProvider CredentialProvider) (
 	service := service{client: c}
 	c.Token = &TokenService{service}
 	c.Account = &AccountService{service}
-	//TODO
-	//c.Deployments = &DeploymentsService{service}
+	c.Deployments = &DeploymentsService{service}
 	c.Datasets = &DatasetsService{service}
 	c.Fields = &FieldsService{service}
 	c.Feedback = &FeedbackService{service}

@@ -39,7 +39,6 @@ type Deployments struct {
 
 // Deployment is a struct which reflects to mopinion Deployment resource.
 type Deployment struct {
-	ID   int
 	Key  string
 	Name string
 }
