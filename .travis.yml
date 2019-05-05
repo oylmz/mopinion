@@ -37,3 +37,6 @@ before_script:
 script:
   - make build   # run vet and compile
   - make test    # Run all the tests with the race detector enabled and linter
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)
