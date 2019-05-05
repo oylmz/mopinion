@@ -26,6 +26,7 @@ install: true
 notifications:
   email: false
 
+  
 # script always runs to completion (set +e). If we have linter issues AND a
 # failing test, we want to see both. Configure golangci-lint with a
 # .golangci.yml file at the top level of your repo.
