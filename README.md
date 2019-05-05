@@ -3,8 +3,7 @@
 [![Build Status](https://travis-ci.com/oylmz/mopinion.svg?branch=master)](https://travis-ci.com/oylmz/mopinion)
 [![codecov](https://codecov.io/gh/oylmz/mopinion/branch/master/graph/badge.svg)](https://codecov.io/gh/oylmz/mopinion)
 
-A go-client for mopinion
-A client library like google's [go-github](https://github.com/google/go-github). The aim is to make the communication with the [Mopinion API](https://developer.mopinion.com/api/) easier. Go doc can be found at https://godoc.org/github.com/oylmz/mopinion
+Go client library like google's [go-github](https://github.com/google/go-github). The aim is to make the communication easier with the [Mopinion API](https://developer.mopinion.com/api/). Go doc can be found at https://godoc.org/github.com/oylmz/mopinion
 
 ## Usage ##
 
