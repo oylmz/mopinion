@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"sort"
 )
 
 // DeploymentsInterface contains CRUD methods for Deployments model.
@@ -45,6 +46,9 @@ func (d *Deployments) UnmarshalJSON(buf []byte) (err error) {
 			return err
 		}
 		d.Deployments = append(d.Deployments, *deployment)
+		sort.SliceStable(d.Deployments, func(i, j int) bool {
+			return d.Deployments[i].Key < d.Deployments[j].Key
+		})
 	}
 	return nil
 }
